@@ -1,0 +1,8 @@
+﻿@model DataGov_API_HBD.Models.Parks
+
+<h2>Index</h2>
+
+@foreach (DataGov_API_HBD.Models.Park park in Model.data)
+{
+@(park.id+ " "+park.name+" "+ park.parks )
+}
