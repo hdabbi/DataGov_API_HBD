@@ -1,8 +1,46 @@
 ﻿@model DataGov_API_HBD.Models.Parks
+@*@foreach (DataGov_API_HBD.Models.Park park in Model.data)
+    {
+        @(park.id+ " "+park.name+" "+ park.parks )
+    }*@
 
-<h2>Index</h2>
+<table>
 
-@foreach (DataGov_API_HBD.Models.Park park in Model.data)
-{
-@(park.id+ " "+park.name+" "+ park.parks )
-}
+    <thead>
+
+        <tr><th>Park_ID</th><th>Park_Type</th></tr>
+
+    </thead>
+
+    <tbody>
+
+        @foreach (DataGov_API_HBD.Models.Park park in Model.data)
+
+        {
+
+            <tr>
+
+                <td>@park.id</td>
+
+                <td>@park.name</td>
+
+
+                @* <td><a href="@park.url">Website</a></td>*@
+
+            </tr>
+
+        }
+
+    </tbody>
+
+</table>
+
+
+
+
+
+
+
+
+
+

@@ -13,7 +13,7 @@ namespace DataGov_API_HBD.Controllers
     {
         HttpClient httpClient;
         //Key: uyRViWArTXmHu5Y2m267YydYcirmlSsavmyCPQcD
-        static string BASE_URL = "https://developer.nps.gov/api/v1/activities";
+        static string BASE_URL = "https://developer.nps.gov/api/v1/";
         static string API_KEY = "uyRViWArTXmHu5Y2m267YydYcirmlSsavmyCPQcD";
 
         public IActionResult Index()
